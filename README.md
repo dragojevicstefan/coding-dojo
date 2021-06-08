@@ -16,13 +16,13 @@ Mockito
 Junit
 
 ### Instalation
-
+```
 $ cd ../coding-dojo
 
 $ mvn clean install
 
 $ mvn spring-boot:run
-
+```
 ### How to use application
 
 To use the application open any browser with the following address:
