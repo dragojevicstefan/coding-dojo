@@ -32,13 +32,13 @@ http://127.0.0.1:8080/api/weather?city={CITY_NAME}
 Replace the {CITY_NAME} by the city that you want to know the temperature.
 
 An example of the response:
-
+```
 {
     "id": 792680,
     "city": "Belgrade",
     "country": "RS",
     "temperature": 294.95
 }
-
+```
 
 
