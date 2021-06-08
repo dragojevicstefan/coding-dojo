@@ -5,18 +5,38 @@ Welcome to the Spring Boot Coding Dojo!
 
 ### Introduction
 
-This is a simple application that requests its data from [OpenWeather](https://openweathermap.org/) and stores the result in a database. The current implementation has quite a few problems making it a non-production ready product.
+This is a simple application that requests its data from [OpenWeather](https://openweathermap.org/) and stores the result in a database. 
 
-### The task
+### Technologies
 
-As the new engineer leading this project, your first task is to make it production-grade, feel free to refactor any piece
-necessary to achieve the goal.
+Java version 11
+Java spring boot version 2.1.6.RELEASE
+Postgres version 42.2.5
+Mockito
+Junit
 
-### How to deliver the code
+### Instalation
 
-Please send an email containing your solution with a link to a public repository.
+$ cd ../coding-dojo
+$ mvn clean install
+$ mvn spring-boot:run
 
->**DO NOT create a Pull Request with your solution** 
+### How to use application
 
-### Footnote
-It's possible to generate the API key going to the [OpenWeather Sign up](https://openweathermap.org/appid) page.
+To use the application open any browser with the following address:
+
+http://127.0.0.1:8080/api/weather?city={CITY_NAME}
+
+Replace the {CITY_NAME} by the city that you want to know the temperature.
+
+An example of the response:
+
+{
+    "id": 792680,
+    "city": "Belgrade",
+    "country": "RS",
+    "temperature": 294.95
+}
+
+
+
