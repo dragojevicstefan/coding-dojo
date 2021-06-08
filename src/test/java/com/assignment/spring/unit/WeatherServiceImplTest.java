@@ -19,7 +19,6 @@ import org.springframework.web.client.RestTemplate;
 
 import static org.junit.Assert.assertEquals;
 import com.assignment.spring.api.WeatherResponse;
-import com.assignment.spring.client.OpenWeatherClient;
 import com.assignment.spring.dtos.InputDTO;
 import com.assignment.spring.mapper.WeatherMapper;
 import com.assignment.spring.models.WeatherEntity;
