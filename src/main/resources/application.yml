@@ -1,0 +1,23 @@
+spring.jpa:
+  database: POSTGRESQL
+  hibernate.ddl-auto: create-drop
+  show-sql: true
+  properties.hibernate.temp.use_jdbc_metadata_defaults: false
+#https://stackoverflow.com/questions/43905119/postgres-error-method-org-postgresql-jdbc-pgconnection-createclob-is-not-imple
+  spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation: true
+#optimizacija za postgres upite
+  spring.jpa.properties.hibernate.dialect : org.hibernate.dialect.PostgreSQL95Dialect
+
+spring.datasource:
+  platform: postgres
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/coding-dojo
+  username: postgres
+  password: root
+
+server:
+  port: 8080
+
+clientconfig:
+  url: http://api.openweathermap.org/data/2.5/weather?q={city}&APPID={appid}
+  appid: 03eadbae864c1da784e7ccedf9a0bdb4
